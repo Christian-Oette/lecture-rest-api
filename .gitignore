@@ -1,0 +1,19 @@
+# "useless" OS X files
+.DS_Store
+
+# maven
+target/
+
+# intellij idea
+*.iml
+*.ipr
+*.iws
+.idea/
+!.idea/copyright/
+!.idea/scopes/
+!.idea/.name
+!.idea/ant.xml
+!.idea/codeStyleSettings.xml
+!.idea/misc.xml
+!.idea/vcs.xml
+
