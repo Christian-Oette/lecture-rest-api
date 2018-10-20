@@ -1,9 +1,10 @@
-# English
-## Rest API Udemy lecture course material 
+[English](#Rest-api-course-material) 
+[German](#Rest-Api-Kursmaterial)
 
-...
+# Rest-api-course-material
 
-# German
-## Kursmaterial für den Kurs Professionelle Rest Apis erstellen
+... more information coming soon
 
-...
+# Rest-Api-Kursmaterial 
+
+... weite Informationen werden folgen
