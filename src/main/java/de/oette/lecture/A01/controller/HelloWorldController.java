@@ -10,13 +10,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloWorldController {
 
     @GetMapping
-    public String hello(@RequestParam String text) {
-        if (text!=null)  {
-            return "You entered: "+text;
+    public String hello(@RequestParam(required = false, defaultValue = "") String text,
+                        @RequestParam(required = false, defaultValue = "") String text2) {
+        if (text.isEmpty() && text2.isEmpty())  {
+            return "Application is up and running. ";
         }
 
-        return "Application is up and running. ";
+        return "You entered: "+text + " "+ text2;
     }
-
 
 }
