@@ -1,5 +1,6 @@
 package de.oette.lecture.A02.controller;
 
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Collection;
@@ -24,11 +25,13 @@ public class TodoApp2Controller {
                 .map(Map.Entry::getKey).reduce(Integer::max)
                 .orElse(0) + 1;
 
+
         todos.put(newPosition, task);
         return newPosition;
     }
 
     @PutMapping
+    @ResponseStatus(code = HttpStatus.BAD_GATEWAY)
     public void update(@RequestParam(value = "todo") TaskDto todo,
                        @RequestParam Integer position) {
         TaskDto currentTask = todos.get(position);
