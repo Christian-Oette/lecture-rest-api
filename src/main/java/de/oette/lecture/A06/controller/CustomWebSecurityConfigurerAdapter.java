@@ -11,8 +11,8 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 /**
- * pass in base64 -> dXNlcjpwYXNz
- * curl -XGET localhost:8090/secure-demo/private -H "Authorization: Basic dXNlcjpwYXNz
+ * user:pass in base64 -> dXNlcjpwYXNz
+ * curl -XGET localhost:8090/secure-demo/private -H "Authorization: Basic dXNlcjpwYXNz"
  */
 @Configuration
 @EnableWebSecurity
