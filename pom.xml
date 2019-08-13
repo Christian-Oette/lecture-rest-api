@@ -5,7 +5,7 @@
 
     <groupId>de.oette.lecture</groupId>
     <artifactId>rest-api</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>rest-api</name>
@@ -22,7 +22,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.10</java.version>
-        <swagger.version>2.9.2</swagger.version>
+        <swagger.version>2.9.1</swagger.version>
     </properties>
 
     <dependencies>
