@@ -31,7 +31,6 @@ public class TodoApp2Controller {
     }
 
     @PutMapping
-    @ResponseStatus(code = HttpStatus.BAD_GATEWAY)
     public void update(@RequestParam(value = "todo") TaskDto todo,
                        @RequestParam Integer position) {
         TaskDto currentTask = todos.get(position);
