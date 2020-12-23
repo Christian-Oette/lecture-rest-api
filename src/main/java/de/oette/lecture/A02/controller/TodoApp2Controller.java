@@ -37,8 +37,6 @@ public class TodoApp2Controller {
         currentTask.description = todo.description;
         currentTask.dueAt = todo.dueAt;
         currentTask.version++;
-
-        todos.put(position, todo);
     }
 
     @DeleteMapping
